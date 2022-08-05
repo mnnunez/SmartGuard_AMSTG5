@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "554249361751",
+    "project_id": "emaskg5",
+    "storage_bucket": "emaskg5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554249361751:android:84579209f761a3e083c612",
+        "android_client_info": {
+          "package_name": "com.example.emask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554249361751-noibebu4aqg9ia5jqgn34q10hiujska6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeT51-NBqMFicrARr72J_C9o50pf8Hms0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554249361751-noibebu4aqg9ia5jqgn34q10hiujska6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
