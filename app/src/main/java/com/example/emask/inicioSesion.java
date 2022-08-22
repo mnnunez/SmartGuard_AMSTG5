@@ -3,7 +3,9 @@ package com.example.emask;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -77,7 +79,7 @@ public class inicioSesion extends AppCompatActivity {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mGoogleSignInClient.signOut();
         startActivityForResult(mGoogleSignInClient.getSignInIntent(),RC_SIGN_IN);
-        goToPantallaInicial();
+        //goToPantallaInicial();
     }
 
 
@@ -140,4 +142,10 @@ public class inicioSesion extends AppCompatActivity {
         Intent sgtSesion= new Intent(this, registroUsuario.class);
         startActivity(sgtSesion);
     }
+
+
+
+
+
+
 }

@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="monospace"
-        android:text="en tu E-MASK"
+        android:text="Smart Guard"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleEnMask"
-        app:srcCompat="@drawable/masksesion" />
+        app:srcCompat="@drawable/smartguard" />
 
     <EditText
         android:id="@+id/correoUsuario"

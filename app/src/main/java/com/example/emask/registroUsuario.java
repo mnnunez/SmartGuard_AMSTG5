@@ -96,6 +96,7 @@ public class registroUsuario extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             currentUser.reload();
+            startActivity(new Intent(this, PantallaInicial.class));
         }
     }
 

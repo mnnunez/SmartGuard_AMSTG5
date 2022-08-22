@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gas_mask" />
+        app:srcCompat="@drawable/smartguard" />
 
     <TextView
         android:id="@+id/titleEmask"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="serif-monospace"
-        android:text="E-MASK"
+        android:text="Smart Guard"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="34sp"
