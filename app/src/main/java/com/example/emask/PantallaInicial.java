@@ -18,9 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class PantallaInicial extends AppCompatActivity {
 
     private ImageView imagenClic;
-    private FirebaseAuth mAuth;
-    private GoogleSignInClient mGoogleSignInClient;
-    private GoogleSignInOptions gso;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,16 +35,12 @@ public class PantallaInicial extends AppCompatActivity {
     }
 
     public void btnCerrarSesion(View view){
-        mAuth.signOut();
-        gso= new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-        mGoogleSignInClient= GoogleSignIn.getClient(this,gso);
-        mGoogleSignInClient.signOut();
-        Intent cerrarSession= new Intent(this, inicioSesion.class);
-        startActivity(cerrarSession);
+        FirebaseAuth.getInstance().signOut();
         finish();
+        Intent cerrarSession= new Intent(this, inicioSesion.class);
+        cerrarSession.putExtra("msg","cerrarSesion");
+        startActivity(cerrarSession);
+
     }
 
     /*private void logout() {

@@ -41,6 +41,14 @@ public class inicioSesion extends AppCompatActivity {
         emailUsuario=(EditText)findViewById(R.id.correoUsuario);
         passUsuario=(EditText)findViewById(R.id.passwordUsuario);
         mAuth=FirebaseAuth.getInstance();
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
     }
 
     public void iniciarSesion(View v){
@@ -53,7 +61,9 @@ public class inicioSesion extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            goToPantallaInicial();
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
+                            //goToPantallaInicial();
                         } else {
                             // If sign in fails, display a message to the user.
                             showAlert();
@@ -95,8 +105,6 @@ public class inicioSesion extends AppCompatActivity {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 Log.d(TAG, "firebaseAuthWithGoogle:" + account.getId());
                 firebaseAuthWithGoogle(account.getIdToken());
-                Intent successSign= new Intent(this, PantallaInicial.class);
-                startActivity(successSign);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e);
@@ -125,6 +133,13 @@ public class inicioSesion extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user) {
+        if(user!=null){
+            String email = user.getEmail();
+            goToPantallaInicial();
+
+        }else{
+            System.out.println("sin registrarse");
+        }
 
     }
 
