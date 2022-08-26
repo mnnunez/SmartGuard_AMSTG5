@@ -54,7 +54,7 @@ public class PantallaInicial extends AppCompatActivity {
                         cont++;
                     }
                 }
-                if (cont >= 16) {
+                if (cont >= 50) {
                     alarmMgr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
                     Intent intent = new Intent(context, AlarmaCercania.class);
                     alarmIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
