@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        onStart();
+        //onStart();
     }
     public void btnComenzar(View view){
         Intent sgtSesion= new Intent(this, inicioSesion.class);
@@ -24,22 +24,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    protected void onStart() {
+    /*protected void onStart() {
         super.onStart();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         String pref = preferences.getString("UsuarioJSon","");
         if(!pref.equals("")){
             startActivity(new Intent(this, PantallaInicial.class));
         }
-    }
+    }*/
 
-    public void alertaMascarilla(){
+    /*public void alertaMascarilla(){
         if(contadorPersonas>50){
             Toast.makeText(MainActivity.this, "ALERTA: CAMBIAR MASCARILLA", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(MainActivity.this, "MASCARILLA UTILIZABLE", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 
 
 
