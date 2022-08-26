@@ -94,20 +94,4 @@ public class PantallaInicial extends AppCompatActivity {
         startActivity(cerrarSession);
 
     }
-
-    /*private void logout() {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.remove("UsuarioJson");
-        editor.apply();
-        this.finish();
-        this.overridePendingTransition(R.anim.left_in, R.anim.left_out);
-    }*/
-
-
-
-
-
-
-
 }
