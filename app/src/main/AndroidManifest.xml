@@ -4,6 +4,13 @@
     package="com.example.emask">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- MAKE ALARMS RESTART ON REBOOT -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +22,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EMASK"
         tools:targetApi="31">
+        <activity
+            android:name=".DetalleInteraccion"
+            android:exported="false" />
+        <activity
+            android:name=".EstadoMascarilla"
+            android:exported="false" />
         <activity
             android:name=".screenPersonasContact"
             android:exported="false" />
@@ -36,6 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".services.AlarmaCercania"
+            android:enabled="true"/>
+        <service android:name=".services.NotificationService"
+            android:enabled="true"/>
     </application>
 
 </manifest>

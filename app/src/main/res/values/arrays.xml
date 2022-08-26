@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cabecera_tabla">
+        <item>Id fila</item>
+        <item>Distancia cm</item>
+        <item>Fecha</item>
+        <item>Hora</item>
+    </string-array>
+
+    <string-array name="cabecera_tabla2">
+        <item>Id fila</item>
+        <item>Fecha</item>
+        <item>Usuario</item>
+    </string-array>
+</resources>

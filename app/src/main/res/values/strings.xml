@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EMASK</string>
+    <string name="new_notification">Su mascarilla ha completado el limite de uso</string>
 </resources>

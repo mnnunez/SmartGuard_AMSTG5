@@ -3,79 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".screenPersonasContact">
-
-    <TextView
-        android:id="@+id/titleInteraccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:fontFamily="monospace"
-        android:text="Interacción con Personas"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/iconoInteraccion"
-        android:layout_width="195dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="28dp"
-        
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleInteraccion"
-        app:srcCompat="@drawable/iconpersonsdetail" />
+    tools:context=".DetalleInteraccion">
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="Total personas: "
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/totalPersonas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="0"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        android:gravity="center_horizontal"
+        android:id="@+id/layoutTexto">
 
+        <TextView
+            android:id="@+id/titleInteraccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="monospace"
+            android:text="Detalle Interaccion"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="REGISTRO DE PERSONAS"/>
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="162dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
 
+            app:srcCompat="@drawable/iconreport" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -117,6 +88,7 @@
         </ScrollView>
 
     </LinearLayout>
+
 
 
 </LinearLayout>

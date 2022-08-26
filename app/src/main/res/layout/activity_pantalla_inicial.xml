@@ -110,6 +110,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="10dp"
                 android:visibility="visible"
+                android:onClick="detalleInteraccion"
                 app:srcCompat="@drawable/iconreport" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -148,6 +149,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="10dp"
+                android:onClick="estado_mascarilla"
                 android:visibility="visible"
                 app:srcCompat="@drawable/iconlocker" />
         </LinearLayout>
